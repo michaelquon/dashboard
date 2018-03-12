@@ -6,3 +6,10 @@ h1{
     width: 800px;
     margin: 0 auto;
 }
+h1{
+    padding: 40px 0px;
+}
+li{
+    list-style-type: none;
+    margin-top: 10px;
+}
