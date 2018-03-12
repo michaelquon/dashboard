@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div id="update-wrapper">
+        <h1>Update Fox</h1>
+        <div class="foxData">
+                
+                <form action="/foxes/<%= fox.id %>" method="post">
+                        <div class="form-group">
+                          <label for="formGroupExampleInput">Name:</label>
+                          <input name="name" value="<%= fox.name %>" type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2">Type:</label>
+                          <input name="type" value="<%= fox.type %>" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Type">
+                        </div>
+                        <div class="form-group">
+                        <label for="formGroupExampleInput2">Fur Color:</label>
+                        <input name="fur" value="<%= fox.fur %>" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Fur Color">
+                        </div>
+                        
+                        <input style="float: right;" class="btn btn-primary btn-lg" type="submit" name="submit" id="submit" value="Submit">
+                </form>
+                    <a href="/"><input class="btn btn-warning btn-lg" value="Go Back" type="submit" name="goback" id="goback"></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

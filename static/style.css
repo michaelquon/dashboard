@@ -1,0 +1,8 @@
+h1{
+    text-align: center;
+}
+
+#main-wrapper, #new-wrapper, #update-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
